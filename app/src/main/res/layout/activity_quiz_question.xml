@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".QuizQuestion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/tvQuesTion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            tools:text="What is the name of this beautiful Bird?"/>
+
+        <ImageView
+            android:id="@+id/tvImage"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="banglaflag"
+            tools:src="@drawable/owl"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="0dp"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                android:indeterminate="false"
+                android:minHeight="50dp"
+                android:progress="2"
+                />
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2/10"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding="15dp"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_optionOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/default_option_border_bg"
+            android:gravity="center"
+            android:padding="15dp"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            tools:text="Apple" />
+
+        <TextView
+            android:id="@+id/tv_optionTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            tools:text = "Apple"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            android:background="@drawable/default_option_border_bg"/>
+        <TextView
+            android:id="@+id/tv_optionThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            tools:text = "Apple"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            android:background="@drawable/default_option_border_bg"/>
+        <TextView
+            android:id="@+id/tv_optionFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="15dp"
+            tools:text = "Apple"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            android:background="@drawable/default_option_border_bg"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/teal_200"/>
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
